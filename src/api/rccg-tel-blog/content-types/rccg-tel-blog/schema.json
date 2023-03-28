@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rccg_tel_blogs",
+  "info": {
+    "singularName": "rccg-tel-blog",
+    "pluralName": "rccg-tel-blogs",
+    "displayName": "rccgTelBlog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
